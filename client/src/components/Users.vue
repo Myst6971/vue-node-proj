@@ -2,8 +2,8 @@
   <div class="users">
     <h1>Users</h1>
     This file will list all users.
-     
-    <div v-for="user in users">
+    <!-- <div v-for="user in users">  -->
+    <div v-for="(user, index) in users" :key="index">
       <p>
         <span><b>{{ user.name }}</b></span><br />
         <span>{{ user.description }}</span>
@@ -22,6 +22,7 @@ export default {
     }
   },
   mounted () {
+    console.log('mounting')
     this.getUsers()
   },
   methods: {

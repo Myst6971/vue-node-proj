@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <div><router-link to="/">Homepage</router-link></div>
+    <div><router-link to="/users">Users</router-link></div>
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
